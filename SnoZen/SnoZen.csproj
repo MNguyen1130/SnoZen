@@ -134,6 +134,7 @@
     <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\less-1.7.0.min.js" />
     <Content Include="js\modernizr.custom.32033.js" />
+    <Content Include="js\placeholdem.js" />
     <Content Include="js\placeholdem.min.js" />
     <Content Include="js\respond.min.js" />
     <Content Include="js\rs-plugin\assets\arrowleft.png" />
@@ -195,6 +196,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +220,9 @@
     <Content Include="js\rs-plugin\font\revicons.woff" />
     <Content Include="js\rs-plugin\js\.DS_Store" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="js\placeholdem.min.js.map">
+      <DependentUpon>placeholdem.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -227,7 +232,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

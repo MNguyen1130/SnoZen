@@ -1,4 +1,6 @@
-﻿@{
+﻿@model SnoZen.Models.Contact
+
+@{
     Layout = null;
 }
 
@@ -56,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#about">about</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
                             <a href="#menu">Menu</a>
@@ -65,10 +67,10 @@
                             <a href="#gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="#social">Social Media</a>
+                            <a href="#social">Social</a>
                         </li>
                         <li>
-                            <a href="#ContactUs">Contact Us</a>
+                            <a href="#ContactUs">Contact</a>
                         </li>
                         <li>
                             <a href="#jobs">Jobs</a>
@@ -140,8 +142,7 @@
                         <!-- End Flavors Slider-->
                     </center>
                 </div>
-            @*</div>
-        </div>*@
+
 
     </header>
 
@@ -408,21 +409,22 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
-                                <form role="form">
+                            <div class="col-md-8 col-sm-6 scrollpoint sp-effect1">
+                                @using (Html.BeginForm())
+                                {
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your name">
+                                        <input type="text" class="form-control" placeholder="Your name" id="Name" name="Name" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder='Your email' required>
+                                        <input type="email" class="form-control" placeholder='Your email' id="Email" name="Email" required>
                                     </div>
                                     <div class="form-group">
-                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message" required></textarea>
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message" id="Message" name="Message" required></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                </form>
+                                    <input type="submit" class="btn btn-primary btn-lg">
+                                }
                             </div>
-                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                            <div class="col-md-4 col-sm-6 contact-details scrollpoint sp-effect2">
                                 <div class="media">
                                     <a class="pull-left" href="#">
                                         <i class="fa fa-map-marker fa-2x"></i>
