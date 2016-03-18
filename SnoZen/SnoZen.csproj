@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -120,6 +121,7 @@
     <Content Include="img\snozen\snow_mango.jpg" />
     <Content Include="img\snozen\snow_strawberry.jpg" />
     <Content Include="img\snozen\snozen-transparent-2.png" />
+    <Content Include="img\snozen\snozen-transparent-cropped.png" />
     <Content Include="img\snozen\snozen-transparent.png" />
     <Content Include="img\snozen\szcombo_atari.jpg" />
     <Content Include="img\snozen\szcombo_berrygood.jpg" />

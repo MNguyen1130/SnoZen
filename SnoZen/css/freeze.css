@@ -479,10 +479,6 @@ footer {
         width: 12em;
     }
 
-    footer .rights {
-        margin-top: 30px;
-    }
-
         footer .rights a {
             text-decoration: underline;
             -webkit-transition: all 0.25s ease-in-out;
@@ -1200,4 +1196,13 @@ form .form-control:focus {
 
 .job-detail hr {
     border-top: 1px solid #336799;
+}
+
+footer {
+    padding: 5px 0 0 0;
+}
+
+footer img {
+    height:auto;
+    max-width:100px;
 }
